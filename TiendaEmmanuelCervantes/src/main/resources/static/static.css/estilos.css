@@ -1,9 +1,118 @@
+#grid{
+    display:grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+            "header header"
+            "aside section"
+            "aside section";
+    margin: auto;
+}
 header{
-    position: fixed;
+    grid-area: header;
     background-color: blue;
-    top: 0;
-    left: 0;
-    height: 80px;
-    width: 100%;
+    margin-top: 0px
 }
 
+section{
+    grid-area: section;
+    background-color: bisque;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+aside{
+    grid-area: aside;
+    background-color: aquamarine;
+    margin-top: 0px;
+}
+
+header h1{
+    color: white;
+}
+
+.navAside{
+    color: white;
+    text-align: center;
+    display:block;
+    margin-top: 0;
+    font-size: 2em; 
+    font-weight: bold;
+
+}
+.TituSec{
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+hr{
+    margin-top: 0;
+    margin-bottom: 0;
+    border-style: inset;
+    border-width: 0.5px;
+}
+
+aside nav{
+    background-color:black;
+}
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header{
+    background-color: #076AF0;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+    margin: 0 auto;
+}
+
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    width: max-content
+}
+
+.nav-menu-link:hover{
+    background-color: #024070;
+    transition: 0.5s;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 4px;
+}
