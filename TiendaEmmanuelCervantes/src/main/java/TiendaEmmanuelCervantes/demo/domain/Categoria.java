@@ -26,4 +26,4 @@ public class Categoria implements Serializable {
         this.descripcion = categoria;
         this.activo = activo;
     }
-}
+}//CLASS END
