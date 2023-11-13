@@ -6,8 +6,7 @@ import java.util.List;
 
 public interface ProductoService {
     
-    //SE OBTIENE UN LISTADO DE CATEGORIAS EN UN LIST
-    public List<Producto> getProductos(boolean activo);
+   public List<Producto> getProductos(boolean activo);
     // Se obtiene un Producto, a partir del id de un producto
     public Producto getProducto(Producto producto);
     // Se inserta un nuevo producto si el id del producto esta vacío
@@ -21,6 +20,5 @@ public interface ProductoService {
     public List<Producto> metodoJPQL(double precioInf, double precioSup);
     //Lista de productos utilizando consultas con SQL Nativo
     public List<Producto> metodoNativo(double precioInf, double precioSup);
-    
     
 }//INTERFACE END
